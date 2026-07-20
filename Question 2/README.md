@@ -14,16 +14,19 @@ These are the exact steps and shell commands I used to write, transfer, compile,
 
 ### Step 2: I compiled my C program
 gcc server_monitor.c -o server_monitor
+
 **My Explanation and Observation:** I ran the gcc compiler command to translate my human-readable C file into machine code. I observed that the command ran cleanly without displaying any compiler errors or warning blocks, outputting the executable server_monitor.
 
 ### Step 3: I executed my process monitor
 ./server_monitor
+
 **My Explanation and Observation:** I executed my compiled program directly from my active terminal directory. I observed the program start up, spawn 3 child processes, successfully wait and reap Child 1 (at 2s) and Child 2 (at 4s) when they exited, detect Child 3 as hung at 5s, kill Child 3 with SIGKILL, and exit cleanly.
 
 #=========================================================
 ## 2: How Process Creation, Waiting, and Signals Work Together
 
 Based on my computer science studies and sources, I can explain how these three operating system mechanisms cooperate to solve the problem of unresponsive web servers:
+
 **Process Creation (fork):** My web server uses the fork() system call to delegate work. The kernel creates a child process by making an almost exact duplicate of the parent's address space, stack, data, and heap segments
 . Because of process isolation, if a child crashes or hangs while parsing bad network input, it does not crash my main parent program
 . The parent receives the child's unique Process ID (PID) as a return value, allowing it to track that specific process

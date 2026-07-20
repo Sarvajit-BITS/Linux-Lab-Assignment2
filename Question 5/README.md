@@ -39,6 +39,7 @@ Here is my evaluation of the five recovery mechanisms, followed by my proposed s
 . When I reboot my computer and reopen the crashed file, vi reads this file and prompts me with an option to recover my unsaved changes
 
 **My Student Assessment:** This is a nice automatic prompt system, but it relies on the configuration being set up perfectly beforehand, and it still uses the swap file behind the scenes to do the actual heavy lifting
+
 ---
 ### Part 2: My Proposed Recovery Strategy and Justification
 

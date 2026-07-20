@@ -14,10 +14,12 @@ These are the exact steps and shell commands I used to write, transfer, compile,
 
 ### Step 2: I compiled my C program
 gcc server_monitor.c -o server_monitor
+
 **My Explanation and Observation:** I ran the gcc compiler command to translate my human-readable C file into machine code. I observed that the command ran cleanly without displaying any compiler errors or warning blocks, outputting the executable server_monitor.
 
 ### Step 3: I executed my process monitor
 ./server_monitor
+
 **My Explanation and Observation:** I executed my compiled program directly from my active terminal directory. I observed the program start up, spawn 3 child processes, successfully wait and reap Child 1 (at 2s) and Child 2 (at 4s) when they exited, detect Child 3 as hung at 5s, kill Child 3 with SIGKILL, and exit cleanly.
 
 #=========================================================

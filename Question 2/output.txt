@@ -1,0 +1,16 @@
+Parent Process: Starting web server monitor. My PID is 1520
+Child 1: Created successfully with PID 1521
+Child 1 (PID 1521): Processing web requests for 2 seconds...
+Child 1 (PID 1521): Finished request. Exiting normally.
+Parent Process: Starting web server monitor. My PID is 1520
+Child 2: Created successfully with PID 1522
+Child 2 (PID 1522): Processing web requests for 4 seconds...
+Child 2 (PID 1522): Finished request. Exiting normally.
+Parent Process: Starting web server monitor. My PID is 1520
+Parent Process: Now actively monitoring 3 child processes...
+Parent Process: Reaped Child 1 (PID 1521) successfully. No zombie created.
+Parent Process: Reaped Child 2 (PID 1522) successfully. No zombie created.
+Parent Process: Child 3 (PID 1523) has exceeded timeout (running for 5 seconds)!
+Parent Process: Sending SIGKILL to terminate unresponsive child...
+Parent Process: Reaped Child 3 (PID 1523) after forced signal termination.
+Parent Process: All child processes have been safely managed. Monitor exiting cleanly.

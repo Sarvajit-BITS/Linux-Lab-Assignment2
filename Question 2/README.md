@@ -26,6 +26,7 @@ gcc server_monitor.c -o server_monitor
 ## 2: How Process Creation, Waiting, and Signals Work Together
 
 Based on my computer science studies and sources, I can explain how these three operating system mechanisms cooperate to solve the problem of unresponsive web servers:
+
 **Process Creation (fork):** My web server uses the fork() system call to delegate work. The kernel creates a child process by making an almost exact duplicate of the parent's address space, stack, data, and heap segments
 . Because of process isolation, if a child crashes or hangs while parsing bad network input, it does not crash my main parent program
 . The parent receives the child's unique Process ID (PID) as a return value, allowing it to track that specific process

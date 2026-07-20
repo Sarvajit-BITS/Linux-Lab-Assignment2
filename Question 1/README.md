@@ -7,7 +7,7 @@ Below is the code I wrote, followed by the exact terminal commands I ran to set 
 
 To solve this problem, I developed a robust Bash shell script using the `vi` text editor. I prioritized clean, maintainable code by including descriptive in-line comments (using `#`) to clearly document my logic, variable assignments, and directory paths. To ensure my lab results are perfectly reproducible, I also embedded the test-environment creation commands directly into the setup phase of the script.
 
-# =================================================================================================================
+# ====================================================
 ## Part 2: My Step-by-Step Lab Setup and Execution Log
 
 These are the exact commands I entered in my terminal to set up my workspace, create test files with identical content (simulating student duplicates), and run my script.
@@ -56,7 +56,7 @@ cat error.log
 **My Explanation and Observation:** I displayed the contents of my error log to check if any commands failed during execution
 . I observed that the file was completely empty, which showed me that my script ran flawlessly with an exit status of 0
 
-# =================================================================================================================
+# ============================================
 ## Part 3: My Justifications
 **1.** Why I Selected These Linux Commands
 sha256sum: I used this tool because checking only file sizes or names can be misleading. Students might copy another student's exact text but rename their file. Generating an SHA-256 hash creates a secure, unique content fingerprint

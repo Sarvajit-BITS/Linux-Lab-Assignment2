@@ -12,7 +12,7 @@ struct Employee {
     float salary;
 };
 ```
-. Because every employee record will be exactly the same size in bytes, I can easily calculate the exact location of any record on the disk without reading the file from the beginning
+Because every employee record will be exactly the same size in bytes, I can easily calculate the exact location of any record on the disk without reading the file from the beginning
 
 ---
 ## Part 1: My Program Logic Design

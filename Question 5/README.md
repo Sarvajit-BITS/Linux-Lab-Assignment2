@@ -4,7 +4,9 @@ In my computer science class, I studied what happens when a system crashes while
 . Because crashes can happen unexpectedly, I evaluated the different recovery tools that vi offers to see which one is the most reliable for getting our unsaved work back
 
 Here is my evaluation of the five recovery mechanisms, followed by my proposed strategy and my personal justification.
+
 ---
+
 ## Part 1: My Evaluation of the Recovery Mechanisms
 ### 1. Swap Files (.swp)
 **How it works:** When I open a file to edit it, vi automatically creates a hidden swap file with a .swp extension in the same folder
@@ -41,6 +43,7 @@ Here is my evaluation of the five recovery mechanisms, followed by my proposed s
 **My Student Assessment:** This is a nice automatic prompt system, but it relies on the configuration being set up perfectly beforehand, and it still uses the swap file behind the scenes to do the actual heavy lifting
 
 ---
+
 ### Part 2: My Proposed Recovery Strategy and Justification
 
 My Proposed Strategy

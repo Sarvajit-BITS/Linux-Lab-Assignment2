@@ -4,7 +4,7 @@ I have designed, written, and tested a C program that solves the unresponsive we
 
 Below are the exact terminal commands I ran to compile and test the program, my observations, and my conceptual explanations of how these components work together. The documented C source code has been uploaded as a separate file in this repository.
 
-# =======================================================
+# =====================================================
 ## 1. Lab Setup and Execution Log
 
 These are the exact steps and shell commands I used to write, transfer, compile, and execute my program.

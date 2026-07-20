@@ -4,7 +4,8 @@ I have designed, written, and tested a C program that solves the unresponsive we
 
 Below are the exact terminal commands I ran to compile and test the program, my observations, and my conceptual explanations of how these components work together. The documented C source code has been uploaded as a separate file in this repository.
 
-# =======================================================
+---
+
 ## 1. Lab Setup and Execution Log
 
 These are the exact steps and shell commands I used to write, transfer, compile, and execute my program.
@@ -22,7 +23,8 @@ gcc server_monitor.c -o server_monitor
 
 **My Explanation and Observation:** I executed my compiled program directly from my active terminal directory. I observed the program start up, spawn 3 child processes, successfully wait and reap Child 1 (at 2s) and Child 2 (at 4s) when they exited, detect Child 3 as hung at 5s, kill Child 3 with SIGKILL, and exit cleanly.
 
-#=========================================================
+---
+
 ## 2: How Process Creation, Waiting, and Signals Work Together
 
 Based on my computer science studies and sources, I can explain how these three operating system mechanisms cooperate to solve the problem of unresponsive web servers:
